@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     ruby_api_generators (0.1.0)
+      thor
 
 GEM
   remote: https://rubygems.org/
@@ -44,6 +45,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    thor (0.20.0)
     unicode-display_width (1.4.0)
 
 PLATFORMS
