@@ -18,9 +18,6 @@ require 'rspec_sequel_matchers'
 # Set locale en-US for faker
 Faker::Config.locale = 'en-US'
 
-# Require files inside the support folder
-Dir[File.expand_path('support/**/*', __dir__)].each { |f| require f }
-
 # Necessary to test a cascading rack app and middleware
 module RSpecHelpers
   include Rack::Test::Methods

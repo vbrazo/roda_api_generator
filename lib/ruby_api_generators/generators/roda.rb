@@ -42,6 +42,7 @@ module RubyApiGenerators
         build_application_folder
         build_models_folder
         build_routes_folder
+        build_middlewares_folder
         build_config_folder
         build_db_folder
       end
@@ -64,6 +65,12 @@ module RubyApiGenerators
         empty_directory "#{name}/application/db"
         copy_file 'application/db/migrations/1_user.rb',
                   "#{name}/application/db/migrations/1_user.rb"
+      end
+
+      def build_middlewares_folder
+        empty_directory "#{name}/application/middlewares"
+        copy_file 'application/middlewares/rack_auth_middleware.rb',
+                  "#{name}/application/middlewares/rack_auth_middleware.rb"
       end
 
       def build_models_folder
