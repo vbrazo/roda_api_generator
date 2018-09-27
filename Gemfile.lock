@@ -55,7 +55,7 @@ DEPENDENCIES
   bundler (~> 1.16)
   rake (~> 10.0)
   rspec (~> 3.0)
-  rubocop
+  rubocop (= 0.59.2)
   ruby_api_generators!
   simplecov (= 0.16.1)
 
