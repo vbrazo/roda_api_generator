@@ -10,9 +10,9 @@ Install it yourself as:
 
 ## Included generators
 
-- [ ] api_generators roda: generates generic layout, stylesheet, and helper files.
+- [ ] api_generators roda: generates a generic Roda API scaffolding.
 
-- [ ] api_generators sinatra: generates a controller and optional model/migration.
+- [ ] api_generators sinatra: generates a generic Sinatra API scaffolding.
 
 To view the README for each generator, run it with the help option.
 
