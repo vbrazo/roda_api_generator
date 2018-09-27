@@ -10,13 +10,14 @@ Install it yourself as:
 
 ## Included generators
 
-- [x] `bundle exec api_generators roda`: generates a generic Roda API scaffolding.
+- [x] `bundle exec api_generators roda --name=project_name`: generates a generic Roda API scaffolding.
 
-- [ ] `bundle exec api_generators sinatra`: generates a generic Sinatra API scaffolding.
+- [ ] `bundle exec api_generators sinatra --name=project_name`: generates a generic Sinatra API scaffolding.
 
 To view the README for each generator, run it with the help option.
 
     $ api_generators roda help
+    $ api_generators sinatra help
 
 ## Found a bug?
 
