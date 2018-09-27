@@ -20,6 +20,14 @@ module RubyApiGenerators
       def copy_licence
         copy_file 'LICENSE', "#{name}/LICENSE"
       end
+
+      def copy_readme
+        copy_file 'README.md', "#{name}/README.md"
+      end
+
+      def copy_config_ru
+        copy_file 'config.ru', "#{name}/config.ru"
+      end
     end
   end
 end
