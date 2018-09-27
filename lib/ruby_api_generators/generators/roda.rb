@@ -5,12 +5,17 @@ module RubyApiGenerators
     class Roda < Thor::Group
       include Thor::Actions
 
-      # Define arguments and options
       argument :name
       class_option :test_framework
 
       def self.source_root
         File.join(File.dirname(__FILE__), '..', 'templates', 'roda')
+      end
+
+      def build_test_suite_folder
+        empty_directory "#{name}/spec"
+        copy_file 'spec/rspec.options', "#{name}/.rspec"
+        template 'spec/spec_helper.rb.erb', "#{name}/spec_helper.rb"
       end
 
       def copy_gemfile
@@ -41,28 +46,12 @@ module RubyApiGenerators
         build_db_folder
       end
 
-      def build_test_suite_folder
-        empty_directory "#{name}/spec"
-        copy_file 'spec/rspec.options', "#{name}/.rspec"
-        template 'spec_helper.rb.erb', "#{name}/spec_helper.rb"
-      end
-
       private
 
       def build_application_folder
         empty_directory "#{name}/application"
         copy_file 'application/api.rb', "#{name}/application/api.rb"
         copy_file 'application/api/api_support.rb', "#{name}/application/api/api_support.rb"
-      end
-
-      def build_models_folder
-        empty_directory "#{name}/application/models"
-        copy_file 'application/api/models/model1.rb', "#{name}/application/models/model1.rb"
-      end
-
-      def build_routes_folder
-        empty_directory "#{name}/application/routes"
-        copy_file 'application/api/routes/main.rb', "#{name}/application/api/routes/main.rb"
       end
 
       def build_config_folder
@@ -75,6 +64,16 @@ module RubyApiGenerators
         empty_directory "#{name}/application/db"
         copy_file 'application/db/migrations/1_user.rb',
                   "#{name}/application/db/migrations/1_user.rb"
+      end
+
+      def build_models_folder
+        empty_directory "#{name}/application/models"
+        copy_file 'application/api/models/model1.rb', "#{name}/application/models/model1.rb"
+      end
+
+      def build_routes_folder
+        empty_directory "#{name}/application/routes"
+        copy_file 'application/api/routes/main.rb', "#{name}/application/api/routes/main.rb"
       end
     end
   end

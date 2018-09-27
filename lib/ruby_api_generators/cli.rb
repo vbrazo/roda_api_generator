@@ -11,7 +11,7 @@ module ApiGenerators
     option :test_framework, type: :string, default: :rspec
 
     def roda
-      args = [options[:name]]
+      args = [options[:name] || 'test_app']
 
       script = RubyApiGenerators::Generators::Roda.new(args, opts_hash)
       script.invoke_all
