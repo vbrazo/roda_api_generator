@@ -1,11 +1,15 @@
 require 'bundler/setup'
 require 'ruby_api_generators'
 
-RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
-  config.example_status_persistence_file_path = '.rspec_status'
+# Add Simplecov configuration
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/.bundle/'
+  add_filter '/spec/'
+end
 
-  # Disable RSpec exposing methods globally on `Module` and `main`
+# RSpec configuration
+RSpec.configure do |config|
   config.disable_monkey_patching!
 
   config.expect_with :rspec do |c|
