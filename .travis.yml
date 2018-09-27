@@ -1,8 +1,6 @@
 env:
   global:
     - CC_TEST_REPORTER_ID=d1da4b827312990bcb30ba473ab79555ba4aa9758eae2811c7ed3349d9e5e5ec
-services:
-  - postgresql
 sudo: false
 language: ruby
 cache: bundler
