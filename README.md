@@ -1,4 +1,4 @@
-# [Napice](http://napice.com) Ruby API Generators [![Build Status](https://travis-ci.org/Napice/ruby_api_generators.svg?branch=master)](https://travis-ci.org/Napice/ruby_api_generators) [![Maintainability](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/maintainability)](https://codeclimate.com/github/Napice/ruby_api_generators/maintainability)
+# [Napice](http://napice.com) Ruby API Generators [![Build Status](https://travis-ci.org/Napice/ruby_api_generators.svg?branch=master)](https://travis-ci.org/Napice/ruby_api_generators) [![Gem Version](https://badge.fury.io/rb/ruby_api_generators.svg)](https://badge.fury.io/rb/ruby_api_generators) [![Maintainability](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/maintainability)](https://codeclimate.com/github/Napice/ruby_api_generators/maintainability)
 
 A collection of useful Ruby generator scripts for scaffolding your APIs.
 
