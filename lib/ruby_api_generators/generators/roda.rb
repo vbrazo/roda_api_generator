@@ -10,13 +10,15 @@ module RubyApiGenerators
       class_option :test_framework
 
       def self.source_root
-        File.join(File.dirname(__FILE__), '..', 'templates')
+        File.join(File.dirname(__FILE__), '..', 'templates', 'roda')
       end
 
-      def create_test_file
-        extension = options[:test_framework] == 'rspec' ? :spec : :test
+      def copy_gemfile
+        copy_file 'Gemfile', "#{name}/Gemfile"
+      end
 
-        create_file "#{name}/#{extension}/#{name}_#{extension}.rb"
+      def copy_licence
+        copy_file 'LICENSE', "#{name}/LICENSE"
       end
     end
   end

@@ -9,12 +9,11 @@ module ApiGenerators
 
     option :name, type: :string
     option :test_framework, type: :string, default: :rspec
-    
+
     def roda
       args = [options[:name]]
-      opts = {:test_framework => option[:test_framework]}
 
-      script = RubyApiGenerators::Generators::Roda.new(args, opts)
+      script = RubyApiGenerators::Generators::Roda.new(args, opts_hash)
       script.invoke_all
     rescue StandardError => e
       warn "ERROR: #{e.message}"
@@ -27,6 +26,14 @@ module ApiGenerators
     rescue StandardError => e
       warn "ERROR: #{e.message}"
       exit 1
+    end
+
+    private
+
+    def opts_hash
+      {
+        test_framework: options[:test_framework]
+      }
     end
   end
 end
