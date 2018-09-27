@@ -1,4 +1,4 @@
-# [Napice](http://napice.com) Ruby API Generators [![Build Status](https://travis-ci.org/Napice/ruby_api_generators.svg?branch=master)](https://travis-ci.org/Napice/ruby_api_generators) [![Maintainability](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/maintainability)](https://codeclimate.com/github/Napice/ruby_api_generators/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/test_coverage)](https://codeclimate.com/github/Napice/ruby_api_generators/test_coverage)
+# [Napice](http://napice.com) Ruby API Generators [![Build Status](https://travis-ci.org/Napice/ruby_api_generators.svg?branch=master)](https://travis-ci.org/Napice/ruby_api_generators) [![Maintainability](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/maintainability)](https://codeclimate.com/github/Napice/ruby_api_generators/maintainability)
 
 A collection of useful Ruby generator scripts for scaffolding your APIs.
 
@@ -10,9 +10,9 @@ Install it yourself as:
 
 ## Included generators
 
-- [ ] api_generators roda: generates a generic Roda API scaffolding.
+- [x] `bundle exec api_generators roda`: generates a generic Roda API scaffolding.
 
-- [ ] api_generators sinatra: generates a generic Sinatra API scaffolding.
+- [ ] `bundle exec api_generators sinatra`: generates a generic Sinatra API scaffolding.
 
 To view the README for each generator, run it with the help option.
 
