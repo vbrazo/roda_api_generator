@@ -5,17 +5,23 @@ require 'thor'
 # Responsibility: handle the command line interface
 module ApiGenerators
   class CLI < Thor
-    desc 'api_generators roda', 'Generate generic Roda API via CLI'
-    # CLI method to generate generic roda API
+    desc 'roda', 'Generate generic Roda API via CLI'
+
+    option :name, type: :string
+    option :test_framework, type: :string, default: :rspec
+    
     def roda
-      # TODO
+      args = [options[:name]]
+      opts = {:test_framework => option[:test_framework]}
+
+      script = RubyApiGenerators::Generators::Roda.new(args, opts)
+      script.invoke_all
     rescue StandardError => e
       warn "ERROR: #{e.message}"
       exit 1
     end
 
-    desc 'api_generators sinatra', 'Generate generic Sinatra API via CLI'
-    # CLI method to generate generic sinatra API
+    desc 'sinatra', 'Generate generic Sinatra API via CLI'
     def sinatra
       # TODO
     rescue StandardError => e
