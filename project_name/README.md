@@ -6,13 +6,14 @@
 
 Fork the project and clone it to your machine.
 
-### Install the database
-
-??
-
 ### Install the dependencies
 
-??
+bundle install
+
+### Install the database
+
+`createdb db_development`
+`bundle exec rake db:migrate`
 
 ## Development 
 
@@ -22,7 +23,7 @@ Fork the project and clone it to your machine.
 
 ### Run the specs
 
-??
+`bundle exec rspec`
 
 ## Built With
 

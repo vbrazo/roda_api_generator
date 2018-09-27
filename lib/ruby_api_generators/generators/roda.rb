@@ -15,7 +15,8 @@ module RubyApiGenerators
       def build_test_suite_folder
         empty_directory "#{name}/spec"
         copy_file 'spec/rspec.options', "#{name}/.rspec"
-        template 'spec/spec_helper.rb.erb', "#{name}/spec_helper.rb"
+        template 'spec/spec_helper.rb.erb', "#{name}/spec/spec_helper.rb"
+        copy_file 'spec/root_view_spec.rb', "#{name}/spec/root_view_spec.rb"
       end
 
       def copy_gemfile
@@ -36,6 +37,10 @@ module RubyApiGenerators
 
       def copy_rakefile
         copy_file 'Rakefile', "#{name}/Rakefile"
+      end
+
+      def copy_env_file
+        copy_file '.env', "#{name}/.env"
       end
 
       def set_up_application_folder
@@ -74,12 +79,12 @@ module RubyApiGenerators
       end
 
       def build_models_folder
-        empty_directory "#{name}/application/models"
-        copy_file 'application/api/models/model1.rb', "#{name}/application/models/model1.rb"
+        empty_directory "#{name}/application/api/models"
+        copy_file 'application/api/models/model1.rb', "#{name}/application/api/models/model1.rb"
       end
 
       def build_routes_folder
-        empty_directory "#{name}/application/routes"
+        empty_directory "#{name}/application/api/routes"
         copy_file 'application/api/routes/main.rb', "#{name}/application/api/routes/main.rb"
       end
     end

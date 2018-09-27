@@ -4,7 +4,7 @@ RSpec.describe ApiGenerators::CLI do
       it 'execute 22 commands' do
         group_output = capture(:stdout) { ApiGenerators::CLI.start(%w(roda --name=project_name)) }
 
-        expect(group_output.scan('project_name').size).to eq(22)
+        expect(group_output.scan('project_name').size).to eq(24)
       end
 
       it 'shows help message', :aggregate_failures do

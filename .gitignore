@@ -5,8 +5,8 @@
 /InstalledFiles
 /pkg/
 
-# Used by dotenv library to load environment variables.
-.env*
+/project_name/.bundle/
+/project_name/coverage/
 
 ## Specific to RubyMotion:
 .dat*
