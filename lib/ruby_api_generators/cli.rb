@@ -5,7 +5,6 @@ require 'thor'
 # Responsibility: handle the command line interface
 module ApiGenerators
   class CLI < Thor
-
     desc 'api_generators roda', 'Generate generic Roda API via CLI'
     # CLI method to generate generic roda API
     def roda
