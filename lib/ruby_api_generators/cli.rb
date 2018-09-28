@@ -5,15 +5,34 @@ require 'thor'
 # Responsibility: handle the command line interface
 module ApiGenerators
   class CLI < Thor
-    desc 'roda', 'Generate generic Roda API via CLI'
+    desc 'cuba', 'Generate generic Cuba API via CLI'
+    def cuba
+      # TODO
+    rescue StandardError => e
+      warn "ERROR: #{e.message}"
+      exit 1
+    end
 
+    desc 'grape', 'Generate generic Grape API via CLI'
     option :name, type: :string
-    option :test_framework, type: :string, default: :rspec
+
+    def grape
+      args = [options[:name] || 'test_app']
+
+      script = RubyApiGenerators::Generators::Grape.new(args)
+      script.invoke_all
+    rescue StandardError => e
+      warn "ERROR: #{e.message}"
+      exit 1
+    end
+
+    desc 'roda', 'Generate generic Roda API via CLI'
+    option :name, type: :string
 
     def roda
       args = [options[:name] || 'test_app']
 
-      script = RubyApiGenerators::Generators::Roda.new(args, opts_hash)
+      script = RubyApiGenerators::Generators::Roda.new(args)
       script.invoke_all
     rescue StandardError => e
       warn "ERROR: #{e.message}"
@@ -26,14 +45,6 @@ module ApiGenerators
     rescue StandardError => e
       warn "ERROR: #{e.message}"
       exit 1
-    end
-
-    private
-
-    def opts_hash
-      {
-        test_framework: options[:test_framework]
-      }
     end
   end
 end
