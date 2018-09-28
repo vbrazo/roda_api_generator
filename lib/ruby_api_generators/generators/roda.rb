@@ -47,6 +47,7 @@ module RubyApiGenerators
         build_application_folder
         build_models_folder
         build_routes_folder
+        build_operations_folder
         build_middlewares_folder
         build_config_folder
         build_db_folder
@@ -80,7 +81,13 @@ module RubyApiGenerators
 
       def build_models_folder
         empty_directory "#{name}/application/api/models"
-        copy_file 'application/api/models/model1.rb', "#{name}/application/api/models/model1.rb"
+        copy_file 'application/api/models/user.rb', "#{name}/application/api/models/user.rb"
+      end
+
+      def build_operations_folder
+        empty_directory "#{name}/application/api/operations"
+        copy_file 'application/api/operations/user_service.rb',
+                  "#{name}/application/api/operations/user_service.rb"
       end
 
       def build_routes_folder
