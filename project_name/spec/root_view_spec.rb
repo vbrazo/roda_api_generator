@@ -8,7 +8,7 @@ RSpec.describe 'Do a GET request in the root_path' do
     expect(last_response.body).to eq('Nothing Here')
   end
 
-  it 'should render something_here page' do
+  it 'should render example page' do
     get '/example', email: 'email'
 
     expect(last_response.status).to eq(200)
