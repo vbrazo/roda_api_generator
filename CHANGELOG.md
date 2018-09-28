@@ -12,6 +12,7 @@
 - [PR #2](https://github.com/napice/ruby_api_generators/pull/2) Add changelog.md and contributing.md [@vbrazo](https://github.com/vbrazo)
 
 ### Feature Request
+- [PR #10](https://github.com/napice/ruby_api_generators/pull/10) Add Grape generator [@vbrazo](https://github.com/vbrazo)
 - [PR #8](https://github.com/napice/ruby_api_generators/pull/8) Add /operations to Roda Generator [@vbrazo](https://github.com/vbrazo)
 - [PR #5](https://github.com/napice/ruby_api_generators/pull/5) Add Roda generator [@vbrazo](https://github.com/vbrazo)
 - [PR #4](https://github.com/napice/ruby_api_generators/pull/4) Add Thor and CLI [@vbrazo](https://github.com/vbrazo)
