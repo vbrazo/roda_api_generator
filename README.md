@@ -10,23 +10,26 @@ Install it yourself as:
 
 ## Included generators
 
-- [x] `bundle exec api_generators roda --name=project_name`: generates a generic Roda API scaffolding.
+- [ ] Cuba API scaffolding `api_generators cuba --name=your_project_name`
 
-- [ ] `bundle exec api_generators sinatra --name=project_name`: generates a generic Sinatra API scaffolding.
+- [ ] Grape API scaffolding `api_generators grape --name=your_project_name`
+
+- [x] Roda API scaffolding: `api_generators roda --name=your_project_name`
+
+- [ ] Sinatra API scaffolding `api_generators sinatra --name=your_project_name`
 
 To view the README for each generator, run it with the help option.
 
-    $ api_generators roda help
-    $ api_generators sinatra help
+    $ api_generators help
 
 ## Found a bug?
 
-If you are having a problem with this gem, please submit an issue here.
+If you are having a problem with this gem, please submit an issue.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/napice/ruby_api_generators.
+See [CONTRIBUTING.md](https://github.com/napice/ruby_api_generators/blob/master/CONTRIBUTING.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License](https://github.com/Napice/ruby_api_generators/blob/master/LICENSE.txt).
