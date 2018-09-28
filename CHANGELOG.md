@@ -4,6 +4,7 @@
 ### Latest update: 2018-09-28
 
 ### Chores
+- [PR #9](https://github.com/napice/ruby_api_generators/pull/9) Rename project_name folder to examples [@vbrazo](https://github.com/vbrazo)
 - [PR #7](https://github.com/napice/ruby_api_generators/pull/7) Add gem badge after pushing to rubygems [@vbrazo](https://github.com/vbrazo)
 - [PR #6](https://github.com/napice/ruby_api_generators/pull/6) Add .codeclimate.yml [@vbrazo](https://github.com/vbrazo)
 
