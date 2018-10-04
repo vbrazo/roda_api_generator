@@ -71,6 +71,8 @@ module RubyApiGenerators
         empty_directory "#{name}/application/db"
         copy_file 'application/db/migrations/20180930152809_add_user_table.rb',
                   "#{name}/application/db/migrations/20180930152809_add_user_table.rb"
+        copy_file 'application/db/migrations/migration_template.rb',
+                  "#{name}/application/db/migrations/migration_template.rb"
       end
 
       def build_models_folder

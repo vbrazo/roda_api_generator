@@ -7,7 +7,8 @@
 - [PR #9](https://github.com/napice/ruby_api_generators/pull/9) Rename project_name folder to examples [@vbrazo](https://github.com/vbrazo)
 
 ### Feature Request
-- [PR #10](https://github.com/napice/ruby_api_generators/pull/10) Add roda-http-auth and update Rakefile [@vbrazo](https://github.com/vbrazo)
+- [PR #13](https://github.com/napice/ruby_api_generators/pull/13) Add migration template file for Roda generator [@vbrazo](https://github.com/vbrazo)
+- [PR #12](https://github.com/napice/ruby_api_generators/pull/12) Add roda-http-auth and update Rakefile [@vbrazo](https://github.com/vbrazo)
 
 ------------------------------------------------------------------------------
 
