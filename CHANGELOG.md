@@ -7,6 +7,7 @@
 - [PR #9](https://github.com/napice/roda_api_generator/pull/9) Rename project_name folder to examples [@vbrazo](https://github.com/vbrazo)
 
 ### Feature Request
+- [PR #14](https://github.com/napice/roda_api_generator/pull/14) Rename gem to roda_api_generator [@vbrazo](https://github.com/vbrazo)
 - [PR #13](https://github.com/napice/roda_api_generator/pull/13) Add migration template file for Roda generator [@vbrazo](https://github.com/vbrazo)
 - [PR #12](https://github.com/napice/roda_api_generator/pull/12) Add roda-http-auth and update Rakefile [@vbrazo](https://github.com/vbrazo)
 
