@@ -5,8 +5,8 @@
 /InstalledFiles
 /pkg/
 
-/examples/roda_scaffolding/.bundle/
-/examples/roda_scaffolding/coverage/
+/example/.bundle/
+/example/coverage/
 
 ## Specific to RubyMotion:
 .dat*
