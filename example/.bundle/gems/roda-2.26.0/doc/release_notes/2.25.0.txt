@@ -1,0 +1,14 @@
+= New Features
+
+* An error_mail plugin has been added for reporting exceptions raised
+  via email.  This is similar to the existing error_email plugin, but
+  uses the mail library instead of net/smtp directly.  If you are
+  already using the mail library and the error_email plugin in your
+  application, it's recommended to switch to the error_mail plugin.
+  Example:
+
+    plugin :error_mail, :to=>'to@example.com', :from=>'from@example.com'
+    plugin :error_handler do |e|
+      error_mail(e)
+      'Internal Server Error'
+    end

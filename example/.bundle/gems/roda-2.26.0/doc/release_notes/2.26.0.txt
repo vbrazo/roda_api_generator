@@ -1,0 +1,13 @@
+= New Features
+
+* The csrf plugin now supports a :skip_middleware option, which adds
+  the methods without adding the middleware.  This is designed for
+  cases where you are using multiple rack apps, where the rack_csrf
+  middleware is loaded in an earlier rack app, and you want to avoid
+  the duplicate CSRF checks.
+
+= Other Improvements
+
+* The type_routing plugin now supports using multiple extensions
+  where one extension is a suffix of another extension, such as
+  using gz and tar.gz.

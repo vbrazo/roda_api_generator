@@ -2,9 +2,9 @@ RSpec.describe ApiGenerators::CLI do
   describe '#start' do
     context 'given valid params' do
       it 'execute commands' do
-        group_output = capture(:stdout) { ApiGenerators::CLI.start(%w(roda --name=project_name)) }
+        group_output = capture(:stdout) { ApiGenerators::CLI.start(%w(roda --name=example)) }
 
-        expect(group_output.scan('project_name').size).to be > 0
+        expect(group_output.scan('example').size).to be > 0
       end
 
       it 'shows help message', :aggregate_failures do
