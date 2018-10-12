@@ -1,6 +1,6 @@
 Metrics/BlockLength:
   Exclude:
-    - 'ruby_api_generators.gemspec'
+    - 'roda_api_generator.gemspec'
 
 Metrics/LineLength:
   Max: 100

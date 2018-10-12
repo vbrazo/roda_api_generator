@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby_api_generators (0.1.1)
+    roda_api_generator (0.1.1)
       thor
 
 GEM
@@ -56,7 +56,7 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec (~> 3.0)
   rubocop (= 0.59.2)
-  ruby_api_generators!
+  roda_api_generator!
   simplecov (= 0.16.1)
 
 BUNDLED WITH

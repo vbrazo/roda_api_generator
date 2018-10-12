@@ -15,17 +15,6 @@ module ApiGenerators
 
       script = RubyApiGenerators::Generators::Roda.new(args, opts_hash)
       script.invoke_all
-    rescue StandardError => e
-      warn "ERROR: #{e.message}"
-      exit 1
-    end
-
-    desc 'sinatra', 'Generate generic Sinatra API via CLI'
-    def sinatra
-      # TODO
-    rescue StandardError => e
-      warn "ERROR: #{e.message}"
-      exit 1
     end
 
     private
