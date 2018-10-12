@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'ruby_api_generators'
+require 'roda_api_generator'
 
 ApiGenerators::CLI.start(ARGV)

@@ -1,22 +1,16 @@
-# [Napice](http://napice.com) Ruby API Generators [![Build Status](https://travis-ci.org/Napice/ruby_api_generators.svg?branch=master)](https://travis-ci.org/Napice/ruby_api_generators) [![Gem Version](https://badge.fury.io/rb/ruby_api_generators.svg)](https://badge.fury.io/rb/ruby_api_generators) [![Maintainability](https://api.codeclimate.com/v1/badges/e33738cf02e5922b6355/maintainability)](https://codeclimate.com/github/Napice/ruby_api_generators/maintainability)
+# [Napice](http://napice.com) Roda API Generator
 
-A collection of useful Ruby generator scripts for scaffolding your APIs.
+A useful Roda API generator script to scaffold your API.
 
 ## Setup
 
 Install it yourself as:
 
-    $ gem install ruby_api_generators
+    $ gem install roda_api_generator
 
-## Included generators
+## Included generator
 
-- [ ] Cuba API scaffolding `api_generators cuba --name=your_project_name`
-
-- [ ] Grape API scaffolding `api_generators grape --name=your_project_name`
-
-- [x] Roda API scaffolding: `api_generators roda --name=your_project_name`
-
-- [ ] Sinatra API scaffolding `api_generators sinatra --name=your_project_name`
+Roda API scaffolding: `api_generators roda --name=your_project_name`
 
 To view the README for each generator, run it with the help option.
 
@@ -28,8 +22,8 @@ If you are having a problem with this gem, please submit an issue.
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/napice/ruby_api_generators/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/napice/roda_api_generator/blob/master/CONTRIBUTING.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://github.com/Napice/ruby_api_generators/blob/master/LICENSE.txt).
+The gem is available as open source under the terms of the [MIT License](https://github.com/Napice/roda_api_generator/blob/master/LICENSE.txt).

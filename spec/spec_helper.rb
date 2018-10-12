@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'ruby_api_generators'
+require 'roda_api_generator'
 
 # Add Simplecov configuration
 require 'simplecov'

@@ -1,16 +1,16 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'ruby_api_generators/version'
+require 'roda_api_generator/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ruby_api_generators'
+  spec.name          = 'roda_api_generator'
   spec.version       = RubyApiGenerators::VERSION
   spec.authors       = ['Vitor Oliveira']
   spec.email         = ['vbrazo@gmail.com']
   spec.summary       = 'A collection of useful Ruby API generator scripts.'
   spec.description   = 'A collection of useful Ruby generator scripts for scaffolding APIs.'
-  spec.homepage      = 'http://github.com/napice/ruby_api_generators'
+  spec.homepage      = 'http://github.com/napice/roda_api_generator'
   spec.license       = 'MIT'
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do

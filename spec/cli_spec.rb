@@ -13,7 +13,6 @@ RSpec.describe ApiGenerators::CLI do
         aggregate_failures 'accurate_help_output' do
           expect(group_output).to include('help [COMMAND]')
           expect(group_output).to include('roda')
-          expect(group_output).to include('sinatra')
         end
       end
     end
