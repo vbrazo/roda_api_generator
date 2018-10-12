@@ -1,4 +1,4 @@
-# [Napice](http://napice.com) Roda API Generator
+# [Napice](http://napice.com) Roda API Generator [![Build Status](https://travis-ci.org/Napice/roda_api_generator.svg?branch=master)](https://travis-ci.org/Napice/roda_api_generator) [![Gem Version](https://badge.fury.io/rb/roda_api_generator.svg)](https://badge.fury.io/rb/roda_api_generator) [![Maintainability](https://api.codeclimate.com/v1/badges/7cde798649fb102fd5b2/maintainability)](https://codeclimate.com/github/Napice/roda_api_generator/maintainability)
 
 A useful Roda API generator script to scaffold your API.
 
